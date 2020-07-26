@@ -38,7 +38,7 @@ depth images | [0.4385] | [0.2491]
 # Dataset Images
 
 ## Background
-![BG](https://github.com/gowtham66866/EVA_S15A/tree/master/Dataset_Sample/bg.png?raw=true)
+![BG](https:/github.com/santhiya-v/EVA/blob/master/S15/A/dataset_sample/bg.png?raw=true)
 
 ## Foreground
 ![FG](https://github.com/santhiya-v/EVA/blob/master/S15/A/dataset_sample/fg.png?raw=true)
