@@ -1,7 +1,7 @@
 
 # GDrive link for the dataset
 
-https://drive.google.com/drive/folders/1DBh_ddxqC7f__luOUQ0WI49kCzPekRV8
+https://drive.google.com/drive/folders/1DBh_ddxqC7f__luOUQ0WI49kCzPekRV8?usp=sharing
 
 # Dataset Statistics
 
@@ -38,7 +38,7 @@ depth images | [0.4385] | [0.2491]
 # Dataset Images
 
 ## Background
-![BG](https:/github.com/santhiya-v/EVA/blob/master/S15/A/dataset_sample/bg.png?raw=true)
+![BG](https://github.com/santhiya-v/EVA/blob/master/S15/A/dataset_sample/bg.png?raw=true)
 
 ## Foreground
 ![FG](https://github.com/santhiya-v/EVA/blob/master/S15/A/dataset_sample/fg.png?raw=true)
