@@ -3,9 +3,9 @@
 
 https://drive.google.com/drive/folders/1DBh_ddxqC7f__luOUQ0WI49kCzPekRV8?usp=sharing
 
-# Dataset Statistics
+# Dataset Statistics are as follows:
 
-## Kinds of images 
+## Images kind
 
 Image | Type | Channels | Dimension
 ----- | ---- | -------- | ---------
@@ -15,7 +15,7 @@ fg_bg | jpg | 3 | 224*224
 fg_bg_masks | jpg | 1 | 224*224
 depth | jpg | 1 | 224*224
 
-## Total images of each kind
+## Total images of each kind are as follows:
 Image | Count
 ----- | -----
  fg | 100
@@ -24,10 +24,10 @@ Image | Count
  fg_bg_masks | 400000
  depth | 400000
 
-## Total size of the dataset
+## Total size of the dataset is as follows:
 4.8 GB
 
-## Mean/STD values 
+## Mean/STD values is as follows:
 Image | Mean | STD
 ----- | ---- | ----
 bg    | [0.5558, 0.5201, 0.4632] | [0.2150, 0.2160, 0.2305]
@@ -35,7 +35,7 @@ fg_bg | [0.5445, 0.5092, 0.4564] | [0.2265, 0.2253, 0.2360]
 fg_bg_masks | [0.0571] | [0.2165]
 depth images | [0.4385] | [0.2491]
 
-# Dataset Images
+# Dataset Images are as follows:
 
 ## Background
 ![BG](https://github.com/gowtham66866/EVA_S15A/blob/master/Dataset_Sample/bg.png?raw=true)
@@ -55,10 +55,10 @@ depth images | [0.4385] | [0.2491]
 ## Depth Images
 ![Depth](https://github.com/gowtham66866/EVA_S15A/blob/master/Dataset_Sample/depth.png?raw=true)
 
-## How dataset was prepared?
+## How is the dataset prepared?
 
-* 100 background images have been collected
-* 100 foreground images have been collected. White background prefrerred and png with transparent background.
+* 100 background images have been collected.
+* 100 foreground images have been collected. White background is prefrerred and png with transparent background.
 * Foreground images with white background have been made transparent, using GIMP tool. 
   Steps :
     * Open the image in GIMP
@@ -68,8 +68,8 @@ depth images | [0.4385] | [0.2491]
     * Now all the white area would have been converted to transparent. Save/Export the image
 * Foreground mask was prepared by using opencv.  
     * Alpha (4th) channel of FG alone is created as separate 1 channel mask image. 
-* **FG BG Preparation**
-    * OpenCV was used
+* **FG BG Preparation is as follows**
+    * OpenCV is ebing used
     * FG is overlaid on BG, at (x,y) of BG, using following code :
       ```
       def overlay_transparent(background, overlay, x, y):
@@ -83,13 +83,13 @@ depth images | [0.4385] | [0.2491]
             return background
        ```
     * For one BG, 
-        * one FG is taken, and 20 random co-ordinates was generated with in the BG bounds
+        * one FG is being taken, and 20 random co-ordinates are generated with in the BG bounds
         * overlay_transparent() method is called for each random co-ordinate, and 20 resulting images are saved
         * FG is then fliped, using opencv, and again the above 2 steps are repeated and 20 images are saved
         * The process is repeated for all FG. At the end, we had 4000 images generated for one BG.
     * Above step was repeated for all 100 BGs and we had 400K images ready
     * Files were written to zip, for easy access. Zip file had 100 folders, where each folder corresponds to 1 BG with 4000 images
-    * Code : https://github.com/santhiya-v/EVA/blob/master/S15/A/DatasetPrep_S15.ipynb
+    * Code : https://github.com/gowtham66866/EVA_S15A/blob/master/DatasetPrep_S15.ipynb
     
  * **Dense Depth Images Preparation**
     * When we ran the model for the fg_bg images, prediction was not good, since all our FGs were either subtle or blending with background.
