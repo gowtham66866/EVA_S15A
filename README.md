@@ -57,9 +57,9 @@ depth images | [0.4385] | [0.2491]
 
 ## How dataset was prepared?
 
-* 100 background images were collected
-* 100 foreground images were collected. Prefrerred white background and png with transparent background
-* Foreground images with white background was made transparent, using GIMP tool. 
+* 100 background images have been collected
+* 100 foreground images have been collected. White background prefrerred and png with transparent background.
+* Foreground images with white background have been made transparent, using GIMP tool. 
   Steps :
     * Open the image in GIMP
     * Select Fuzzy Select Tool and click on white area of the image
