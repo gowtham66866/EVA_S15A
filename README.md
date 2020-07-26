@@ -44,16 +44,16 @@ depth images | [0.4385] | [0.2491]
 ![FG](https://github.com/gowtham66866/EVA_S15A/blob/master/Dataset_Sample/depth.png?raw=true)
 
 ## Foreground Mask
-![FG Mask](https://github.com/santhiya-v/EVA/blob/master/S15/A/dataset_sample/fg_mask.png?raw=true)
+![FG Mask](https://github.com/gowtham66866/EVA_S15A/blob/master/Dataset_Sample/fg_mask.png?raw=true)
 
 ## FG BG
-![FG BG](https://github.com/santhiya-v/EVA/blob/master/S15/A/dataset_sample/fg_bg.png?raw=true)
+![FG BG](https://github.com/gowtham66866/EVA_S15A/blob/master/Dataset_Sample/fg_bg.png?raw=true)
 
 ## FG BG Mask
-![FG BG Mask](https://github.com/santhiya-v/EVA/blob/master/S15/A/dataset_sample/fg_bg_mask.png?raw=true)
+![FG BG Mask](https://github.com/gowtham66866/EVA_S15A/blob/master/Dataset_Sample/fg_bg_mask.png?raw=true)
 
 ## Depth Images
-![Depth](https://github.com/santhiya-v/EVA/blob/master/S15/A/dataset_sample/depth.png?raw=true)
+![Depth](https://github.com/gowtham66866/EVA_S15A/blob/master/Dataset_Sample/depth.png?raw=true)
 
 ## How dataset was prepared?
 
@@ -128,7 +128,7 @@ depth images | [0.4385] | [0.2491]
  * **Dataset Statistics** 
       * Wrote a custom Zip dataset loader, using pytorch, to read the images
       * Images where read in batch of 8, mean and std where calculated
-      * Code : https://github.com/santhiya-v/EVA/blob/master/S15/A/MeanStd_DataSet.ipynb
+      * Code : https://github.com/gowtham66866/EVA_S15A/blob/master/MeanStd_DataSet.ipynb
       
 
     
